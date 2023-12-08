@@ -28,16 +28,21 @@
     }
   }
 
-  .utilitiesContainer {
-    display: flex;
-
-    gap: 14px;
-    overflow-x: scroll;
-    transform: translateX(30px);
-    @include hideScroll ();
+  .marqueeConatiner {
+    @include responsive($screen-768) {
+      transform: translateX(30px) translateY(-40px);
+    }
 
     @include responsive($screen-1280) {
-      transform: translateX(60px);
+      transform: translateX(60px) translateY(-40px);
+    }
+    .utilitiesContainer {
+      display: flex;
+      padding-right: 14px;
+      gap: 14px;
+      overflow-x: scroll;
+
+      @include hideScroll();
     }
   }
 }
