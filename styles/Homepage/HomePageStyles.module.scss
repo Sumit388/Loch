@@ -1,0 +1,11 @@
+@use "@Styles/Base" as *;
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: $black;
+
+  @include responsive($screen-1280) {
+    flex-direction: row;
+  }
+}

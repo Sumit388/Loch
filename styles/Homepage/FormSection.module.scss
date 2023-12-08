@@ -1,0 +1,87 @@
+@use "@Styles/Base" as *;
+
+.mainContainer {
+  background: $white;
+  position: relative;
+  box-shadow: $active-box-shadow;
+  width: 100%;
+
+  @include responsive($screen-1280) {
+    width: 44%;
+  }
+
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 32px;
+    position: sticky;
+    top: 0px;
+
+    :nth-child(3).error {
+      color: red;
+      margin-top: -24px;
+      margin-bottom: -16px;
+      margin-left: -126px;
+    }
+
+    .heading {
+      width: 326px;
+      color: $extreme-light-grey;
+      font-size: 39px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+    }
+
+    input {
+      width: 326px;
+      padding: 20px 24px;
+      font-size: $font-16;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+
+      &::placeholder {
+        color: $placeholder-font-color;
+      }
+    }
+
+    button {
+      width: 326px;
+      border-radius: 8px;
+      border: 1px solid $black-font;
+      background: $black-font;
+      display: flex;
+      width: 340px;
+      height: 59px;
+      padding: 18px 28px;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      text-align: center;
+      cursor: pointer;
+      font-size: $font-16;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%;
+    }
+
+    .description {
+      display: inline-flex;
+      padding: 18px 0px;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      color: $black-font;
+      text-align: center;
+      font-size: $font-16;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%;
+      white-space: nowrap;
+    }
+  }
+}

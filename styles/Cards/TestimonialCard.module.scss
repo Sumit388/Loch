@@ -1,0 +1,44 @@
+@use "@Styles/Base" as *;
+
+.cardContainer {
+  height: 136px;
+  min-width: 353px;
+  border-radius: 12px;
+  background: $white;
+  box-shadow: $card-box-shadow;
+
+  .subContainer {
+    padding: 20px;
+
+    .headerContainer {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .name {
+        color: $black-font;
+        font-size: $font-16;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+      }
+
+      .designation {
+        color: $grey-font;
+        font-size: $font-13;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+      }
+    }
+
+    .descriptionContainer {
+      padding-top: 20px;
+      color: $light-black;
+      font-size: $font-16;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+    }
+  }
+}

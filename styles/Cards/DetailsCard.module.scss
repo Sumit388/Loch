@@ -1,0 +1,31 @@
+@use "@Styles/Base" as *;
+
+.detailsContainer {
+  .heading {
+    padding-top: 16px;
+    width: 313px;
+
+    h2 {
+      color: $misty-white;
+      text-shadow: $font-shadow;
+      font-size: $font-31;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+    }
+  }
+
+  .description {
+    width: 322px;
+    padding-top: 16px;
+    opacity: 70%;
+
+    p {
+      color: $misty-white;
+      font-size: $font-16;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@use "@Styles/Base" as *;
+
+.mainContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 72px;
+  width: 100%;
+
+  @include responsive($screen-768) {
+    gap: 0px;
+    height: 251px;
+    flex-direction: row;
+  }
+
+  &:before {
+    display: none;
+
+    @include responsive($screen-1280) {
+      right: -60px;
+      content: "";
+      display: block;
+      position: absolute;
+      height: 80%;
+      width: 180px;
+      background: $fade-gradient;
+      z-index: 2;
+    }
+  }
+
+  .utilitiesContainer {
+    display: flex;
+
+    gap: 14px;
+    overflow-x: scroll;
+    transform: translateX(30px);
+    @include hideScroll ();
+
+    @include responsive($screen-1280) {
+      transform: translateX(60px);
+    }
+  }
+}

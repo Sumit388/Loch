@@ -1,0 +1,29 @@
+// Colors
+$white: #fff;
+$black: #000;
+$black-font: #19191a;
+$grey-font: #96979a;
+$light-black: #1d2129;
+$misty-white: #f2f2f2;
+$smoky-grey: #d4d4d4;
+$disabled-grey: rgba(229, 229, 230, 0.5);
+$disabled-black: #313233;
+$extreme-light-grey: #b0b1b3;
+$placeholder-font-color: #cacbcc;
+
+//Gradients
+$primary-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.2) 27.5%,
+    rgba(22, 93, 255, 0.16) 157.71%
+  ),
+  #fff;
+
+$secondary-gradient: radial-gradient(
+  92.19% 89.74% at 32.27% 91.27%,
+  rgba(31, 169, 17, 0.81) 17.21%,
+  #2f15d0 64.58%,
+  rgba(0, 0, 0, 0) 100%
+);
+
+$fade-gradient: linear-gradient(270deg, #000 0%, transparent 100%);

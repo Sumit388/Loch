@@ -1,0 +1,38 @@
+@use "@Styles/Base" as *;
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 251px;
+  margin-top: 72px;
+  gap: 0px;
+
+  .imageContainer {
+    margin-top: 72px;
+    width: 280px;
+    flex-shrink: 0;
+    order: 2;
+
+    @include responsive($screen-768) {
+      margin-top: 0;
+      order: 1;
+    }
+
+    @include responsive($screen-1280) {
+      width: 335px;
+      height: 306px;
+      height: auto;
+    }
+  }
+
+  .cardContainer {
+    order: 1;
+
+    @include responsive($screen-768) {
+      text-align: right;
+      order: 2;
+    }
+  }
+}

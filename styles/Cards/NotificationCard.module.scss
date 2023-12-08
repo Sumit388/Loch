@@ -1,0 +1,45 @@
+@use "@Styles/Base" as *;
+
+.mainContainer {
+  position: relative;
+  min-width: 189.7px;
+  max-width: 189.7px;
+  height: 171.5px;
+  padding: 14px;
+  border-radius: 8.4px;
+  background: $primary-gradient;
+  box-shadow: $primary-box-shadow;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  .saveButton {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 9.1px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+  }
+
+  .description {
+    color: $black-font;
+    font-size: $font-14;
+    font-style: normal;
+    font-weight: 500;
+    width: 80%;
+    line-height: 120%;
+  }
+
+  input {
+    width: 100%;
+    padding: 8.4px 11.2px;
+    border-radius: 5.6px;
+    border: 0.7px solid $smoky-grey;
+    background: $white;
+  }
+}

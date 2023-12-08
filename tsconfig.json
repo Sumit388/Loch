@@ -1,10 +1,21 @@
 {
   "compilerOptions": {
+    "baseUrl": "../loch",
+    "paths": {
+      "@Assets/*": ["src/assets/*"],
+      "@Components/*": ["src/components/*"],
+      "@Data/*": ["src/data/*"],
+      "@Pages/*": ["pages/*"],
+      "@Public/*": ["public/*"],
+      "@Styles/*": ["styles/*"],
+      "@Types/*": ["src/types/*"],
+      "@Utils/*": ["src/utils/*"],
+    },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -12,8 +23,17 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "typeRoots": ["types/"],
+    "downlevelIteration": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "types/*.d.ts",
+    "tsconfig.json"
+  ],
   "exclude": ["node_modules"]
 }

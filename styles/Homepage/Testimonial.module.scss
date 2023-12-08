@@ -1,0 +1,49 @@
+@use "@Styles/Base" as *;
+
+.mainContainer {
+  margin-top: 72px;
+
+  @include responsive($screen-768) {
+    margin-top: 0;
+  }
+
+  h2 {
+    margin-top: 22px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $disabled-grey;
+    color: $misty-white;
+    text-align: right;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+  }
+
+  .scrollableSection {
+    margin-top: 40px;
+    width: calc(100% + 30px);
+    padding-right: 20px;
+    height: 137px;
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    @include hideScroll();
+
+    :nth-of-type(4) {
+      min-width: 530px;
+    }
+
+    @include responsive($screen-1280) {
+      width: calc(100% + 60px);
+    }
+
+    .logo {
+      margin-right: 40px;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
+  }
+}

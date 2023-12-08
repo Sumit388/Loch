@@ -1,0 +1,12 @@
+@use "@Styles/Base" as *;
+
+.mainContainer {
+  width: 100%;
+  padding: 30px;
+  background: $secondary-gradient;
+
+  @include responsive($screen-1280) {
+    width: 56%;
+    padding: 80px 60px 80px 60px;
+  }
+}
