@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "../loch",
+    "baseUrl": ".",
     "paths": {
       "@Assets/*": ["src/assets/*"],
       "@Components/*": ["src/components/*"],
